@@ -7,7 +7,7 @@ const { vehiculos_post, vehiculos_get_cliente } = require('../controllers/vehicu
 
 const router = Router()
 
-router.get('/',[validarJWT,validarCampos],vehiculos_get_cliente )
+router.get('/:uid_cliente',[validarJWT,validarCampos],vehiculos_get_cliente )
 router.post('/crear_vehiculo',vehiculos_post)
 
 module.exports = router

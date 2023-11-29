@@ -47,6 +47,8 @@ class Server{
         this.app.use(paths.taller,require('../routes/taller.routes'))
         this.app.use(paths.persona,require('../routes/persona.routes'))
         this.app.use(paths.vehiculo,require('../routes/vehiculo.routes'))
+        this.app.use(paths.solicitar_asistencia,require('../routes/solicitud_asistencia.routes'))
+       
     }
 }
 

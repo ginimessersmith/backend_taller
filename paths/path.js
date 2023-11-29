@@ -5,6 +5,7 @@ const paths={
     taller:'/api/taller',
     solicitar_asistencia:'/api/solicitar_asistencia',
     vehiculo:'/api/vehiculo',    
+    
 }
 
 module.exports= paths

@@ -6,6 +6,7 @@ const Taller = require('./taller.model')
 
 
 class Persona extends Model { }
+
 Persona.init({
     uid: {
         type:DataTypes.UUID,
@@ -64,5 +65,5 @@ Persona.init({
 
 Persona.belongsTo(Taller,{foreignKey:'uid_taller'})
 
-module.exports={Persona}
+module.exports=Persona
 

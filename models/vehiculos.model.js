@@ -47,4 +47,6 @@ Vehiculo.init({
     timestamps: false
 })
 
+Vehiculo.belongsTo(Persona,{foreignKey:'uid_cliente'})
 
+module.exports=Vehiculo

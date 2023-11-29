@@ -4,7 +4,7 @@ const paths={
     tecnico:'/api/tecnico',
     taller:'/api/taller',
     solicitar_asistencia:'/api/solicitar_asistencia',
-    vehiculos:'/api/vehiculos',    
+    vehiculo:'/api/vehiculo',    
 }
 
 module.exports= paths

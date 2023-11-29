@@ -46,6 +46,7 @@ class Server{
         this.app.use(paths.auth,require('../routes/auth.routes'))
         this.app.use(paths.taller,require('../routes/taller.routes'))
         this.app.use(paths.persona,require('../routes/persona.routes'))
+        this.app.use(paths.vehiculo,require('../routes/vehiculo.routes'))
     }
 }
 

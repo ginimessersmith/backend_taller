@@ -1,5 +1,5 @@
 const bcrypt = require('bcryptjs')
-const { Persona } = require("../models/persona.model")
+const Persona = require("../models/persona.model")
 
 
 

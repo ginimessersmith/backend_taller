@@ -2,7 +2,7 @@ const { Router } = require('express')
 
 const { validarJWT } = require('../middleware/validarJWT')
 const { validarCampos } = require('../middleware/validarCampos')
-const { solicitad_asistencia_get, solicitud_Asistencia_post, servicio_img_post, servicio_post, asignar_servicio, asignar_Solicitud_taller, asignar_Solicitud_tecnico, mostrar_solictudes_tecnico, mostrar_tecnicos_solicitudes } = require('../controllers/solicitud_asistencia.controller')
+const { solicitad_asistencia_get, solicitud_Asistencia_post, servicio_img_post, servicio_post, asignar_servicio, asignar_Solicitud_taller, asignar_Solicitud_tecnico, mostrar_solictudes_tecnico, mostrar_tecnicos_solicitudes, ver_servicios } = require('../controllers/solicitud_asistencia.controller')
 
 
 const router = Router()
@@ -17,6 +17,7 @@ router.post('/asignar_taller_solicitud', [], asignar_Solicitud_taller)
 router.post('/asignar_servicio', [], asignar_servicio)
 router.post('/aceptar_taller', [], asignar_Solicitud_taller)
 router.post('/asignar_tecnico_solicitud', [], asignar_Solicitud_tecnico)
+router.get('/ver_servicios', [],ver_servicios)
 
 
 module.exports = router

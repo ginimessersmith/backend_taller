@@ -329,6 +329,18 @@ const asignar_Solicitud_tecnico = async (req, res) => {
     }
 }
 
+const ver_servicios = async (req, res) => {
+    try {
+        const listaServicios = await Servicio.findAll()
+        res.json(listaServicios)
+
+    } catch (error) {
+        console.log(error)
+        res.status(400).json({
+            mensaje: 'Error al cargar los servicios'
+        })
+    }
+}
 
 module.exports = {
     solicitad_asistencia_get,
@@ -340,5 +352,6 @@ module.exports = {
     concluir_servicio_tecnico,
     asignar_Solicitud_tecnico,
     mostrar_solictudes_tecnico,
-    mostrar_tecnicos_solicitudes
+    mostrar_tecnicos_solicitudes,
+    ver_servicios
 }

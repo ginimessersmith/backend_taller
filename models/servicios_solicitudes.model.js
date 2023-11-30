@@ -1,5 +1,5 @@
 const { DataTypes, Model } = require('sequelize')
-const { sequelize } = require('../database/dbConnection')
+const { sequelize } = require('../database/db_connection')
 
 class Servicio_Solicitudes extends Model { }
 
@@ -19,3 +19,5 @@ Servicio_Solicitudes.init({
     ,timestamps:false,
     primaryKey:['uid_servicio','uid_solicitud_asistencia']
 })
+
+module.exports= Servicio_Solicitudes
